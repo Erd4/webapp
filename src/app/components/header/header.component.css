@@ -10,6 +10,7 @@ header img{
     border-left: 10px;
     margin-top: 10px;
     height: 100px;
+    align-items: center;
 }
 
 h1 {
