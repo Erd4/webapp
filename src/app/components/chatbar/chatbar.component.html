@@ -1,0 +1,19 @@
+<!-- inline tags -->
+<!-- oder ohne class= um kleiner zu machen-->
+<textarea class="form-control" 
+type="text" 
+[(ngModel)]="chatMessage" 
+placeholder="type here..."
+(keyup.enter)= "addMessage(chatMessage)"
+>
+
+</textarea>
+<!-- primary, secondary, -->
+<button class="btn btn-secondary" (click)="addMessage(chatMessage)" [disabled]="!chatMessage">
+    send
+</button>
+
+<p> {{ chatMessage }} </p>
+
+
+

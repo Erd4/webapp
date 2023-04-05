@@ -1,0 +1,19 @@
+footer{
+    height: 100px;
+    background-color: #00802F;
+    color: white;
+    border-top: 2px solid rgb(0, 0, 0);
+
+}
+
+h1 {
+    font-size: large;
+}
+h2 {
+    font-size: medium;
+}
+h3 {
+    font-size: small;
+    text-align: center;
+}
+
