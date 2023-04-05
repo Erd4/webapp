@@ -1,0 +1,30 @@
+html,
+body {
+    height: 100%;
+}
+
+#wrap {
+    min-height: 100%;
+  }
+
+#footer {
+    position: top;
+    clear: both;
+  }
+  
+#main {
+    overflow: auto;
+    padding-bottom: 180px;
+    /* must be same height as the footer */
+  }
+  
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: -180px;
+    /* negative value of footer height */
+    height: 180px;
+    clear: both;
+  }

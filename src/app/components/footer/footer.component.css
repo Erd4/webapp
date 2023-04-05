@@ -7,7 +7,8 @@ footer{
 }
 
 h1 {
-    font-size: large;
+    font-size: small;
+    text-align: center;
 }
 h2 {
     font-size: medium;
@@ -15,5 +16,20 @@ h2 {
 h3 {
     font-size: small;
     text-align: center;
+    margin-top: 25px;
 }
 
+a:link { text-decoration: none; color: white; }
+a:visited { text-decoration: none; color: white; }
+a:hover { text-decoration: underline; color: white;}
+a:active { text-decoration: underline; color: white;}
+
+.kontakt {
+    display: block;
+    font-size: small;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 9999;
+    font-weight: bold;
+  }
