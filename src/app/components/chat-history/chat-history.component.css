@@ -1,0 +1,74 @@
+div {
+  /*ACHTUNG VERTIKALE HÖHE IST NOCH NICHT SAUBER GELÖST:*/
+  height: 55vh;
+}
+
+textarea {
+  width: 100%;
+  height: 60px;
+  resize: none;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+/* Eingabe-Formular */
+.chat-input {
+  height: 200px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+/* Eingabefeld */
+.chat-input textarea {
+  padding: 10px;
+}
+
+/* Chat-Verlauf */
+.chat-history {
+  padding: 30px;
+  max-height: 55vh;
+  max-width: 100%; /* begrenzt die Breite auf das Fenster */
+  overflow-y: scroll; /* ermöglicht das Scrollen bei Überlauf */
+  background-color: #e8e8e8;
+  border-radius: 20px;
+  z-index: 99;
+  white-space: pre-wrap;
+  margin-bottom: 10px;
+}
+
+/* Chat-Verlauf Einträge */
+.chat-history p {
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: pre-wrap;
+  margin-bottom: 10px !important;
+  margin-top: 5px;
+  border-radius: 20px; /* abgerundete Ecken */
+  padding: 1cm; /* Innenabstand des Textes von der Box */
+  max-width: 80%; /* maximale Breite der Chat-Nachrichten */
+  margin: 1cm; /* Abstand zwischen den Chat-Nachrichten */
+}
+
+.chat-message {
+  padding: 1cm; /* Innenabstand des Textes von der Box */
+  margin-bottom: 10px !important; /* Abstand zwischen den Chat-Nachrichten */
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: break-spaces;
+}
+
+/* Eingabe-Formular-Container */
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 50px;
+  border-radius: 25px;
+}
+

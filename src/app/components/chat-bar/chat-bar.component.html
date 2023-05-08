@@ -1,0 +1,22 @@
+<!-- Hier wird ein Texteingabefeld mit einer Eingabefeldbindung an ngModel erstellt -->
+
+<textarea
+  class="form-control"
+  rows="2"
+  type="text"
+  placeholder="Hier Ihre Nachricht eingeben..."
+  [(ngModel)]="chatMessage"
+  (keyup.enter)="addMessage(chatMessage)"
+></textarea>
+
+<!-- Ein Button zum Auslösen der addMessage()-Funktion -->
+<button
+  class="btn btn-primary btn-success"
+  [disabled]="!(chatMessage.trim() && nickname)"
+  (click)="addMessage(chatMessage)"
+>
+  Senden
+</button>
+
+<!-- Hier wird eine Fehlermeldung angezeigt, wenn errorMessage einen Wert enthält -->
+<div *ngIf="errorMessage" class="alert alert-warning">{{ errorMessage }}</div>

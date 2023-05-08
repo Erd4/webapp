@@ -1,0 +1,11 @@
+<div *ngIf="inputVisible">
+  <div class="form-group">
+    <label for="nickname"><h2>Benutzername:</h2></label>
+    <input type="text" id="nickname" [(ngModel)]="nickname" (keydown.enter)="createNickname()" placeholder="Geben Sie Ihren Benutzernamen ein" autofocus>
+    <button class="btn btn-primary create-nickname" [ngClass]="{'valid': nickname.trim().length > 0}" (click)="createNickname()">Erstellen</button>
+  </div>
+</div>
+<div *ngIf="!inputVisible">
+  <p style="white-space: pre-line">{{ message }}</p>
+  <button class="btn btn-secondary change-nickname" (click)="changeNickname()">Benutzername ändern</button>
+</div>

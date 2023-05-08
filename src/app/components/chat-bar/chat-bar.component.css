@@ -1,0 +1,26 @@
+textarea {
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+button.btn-primary.btn-success {
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 99px;
+  width: 100px;
+  background-color: #035d3e; /* default background color */
+  transition: background-color 0.3s ease-in-out; /* transition effect */
+}
+
+button.btn-primary.btn-success.disabled {
+  background-color: #035d3e;
+}
+
+button.btn-primary.btn-success:hover {
+  background-color: #022f1f; /* background color on hover */
+}

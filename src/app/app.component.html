@@ -1,29 +1,27 @@
-<div id="wrap">
-  <div id="header">
-    <div class="container">
-      <div class="row"> 
-        <div class="col"><app-header></app-header></div>
+  <!-- Fügt die Header-Komponente hinzu -->
+  <app-header></app-header> 
+  <main>
+    <div class="row">
+      <div class="col-md-4">
+        <!-- Fügt die Nickname-Komponente hinzu und hört auf das nicknameCreate-Event -->
+        <app-nickname (nicknameCreate)="nicknameCreated($event)"></app-nickname>
+      </div>
+      <div class="col-md-8">
+        <!-- Fügt die Chat-History-Komponente hinzu und gibt die Nachrichten-Historie als Input weiter -->
+        <app-chat-history [history]="messageHistory"></app-chat-history>
       </div>
     </div>
-  </div>
+    <div class="row">
+      <div class="col-md-8 offset-md-4">
+        <!-- Fügt die Chat-Bar-Komponente hinzu -->
+        <!-- Gibt den aktuellen Benutzernamen als Input weiter -->
+        <app-chat-bar
+          (submitMessage)="messageSubmitted($event)"
+          [nickname]="nickname"
+        ></app-chat-bar>
+      </div>
+    </div>
+  </main>
 
-  <div id="main">
-    <div class="container">
-      <div class="row"> 
-        <div class="col">
-          <main>
-          <app-chatbar></app-chatbar>
-          </main>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="footer">
-    <div class="container">
-      <div class="row"> 
-        <div class="col"><app-footer></app-footer></div>
-      </div>
-    </div>
-  </div>
-</div>
+  <!-- Fügt die Footer-Komponente hinzu -->
+  <app-footer></app-footer>

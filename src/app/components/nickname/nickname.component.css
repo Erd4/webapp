@@ -1,0 +1,66 @@
+.form-group {
+  /*background-color: rgba(0, 0, 0, 0.332);*/
+  bottom: 60px;
+  width: 100%;
+  padding: 7px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  gap: 20px;
+}
+
+button {
+  border: none;
+  color: rgb(230, 230, 230);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 25px;
+  width: 100px;
+}
+
+button.create-nickname {
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 99px;
+  width: 100px;
+  background-color: #035d3e; /* default background color */
+  transition: background-color 0.3s ease-in-out; /* transition effect */
+}
+
+button.create-nickname.valid:hover {
+  background-color: #022f1f;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.create-nickname.valid {
+  background-color: #035d3e;
+  color: white;
+}
+
+button.change-nickname {
+  background-color: #035d3e;
+  width: 210px;
+  color: white;
+}
+
+button.change-nickname:hover {
+  background-color: #022f1f;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  border-radius: 999px;
+  border: none;
+  background-color: #e8e8e8;
+  padding: 10px 20px;
+}

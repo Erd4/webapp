@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+/* Schriftgrösse der Titel */
+h1 {
+  font-size: large;
+}
+h2 {
+  font-size: medium;
+}
+h3 {
+  font-size: small;
+}
+
+/*** Main-Position
+main {
+  grid-row: 2;
+  grid-column: 1;
+  display: grid;
+  grid-template-rows: 1fr minmax(0, max-content);
+  grid-template-columns: 1fr;
+}
+***/
+
+
+/* Sende-Button */
+button {
+  padding: 10px 20px;
+  border-radius: 999px;
+}
+
+/* Link Style */
+a {
+  color: white;
+  text-decoration: none;
+}
+
+app-chat-bar {
+  padding-top: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
